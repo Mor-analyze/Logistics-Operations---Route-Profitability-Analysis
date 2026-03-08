@@ -19,10 +19,10 @@ Key characteristics of the dataset:
 
 
 ## 3. Data Quality Checks
-The following validations were performed:
-- Checked for duplicate records in fact tables such as loads, trips, and delivery_events
-- Verified that key identifiers such as driver_id, truck_id, and route_id were not missing
-- Validated cost fields in fuel_purchases and maintenance_records to ensure no negative values were present
-- Confirmed primary key uniqueness in dimension tables such as drivers, trucks, and routes
-The dataset was generally well-structured and required minimal preprocessing before performing the analysis.
+Before conducting the analysis, several data quality checks were performed to ensure the reliability and accuracy of the dataset. The validation focused on the tables that are directly relevant to the route profitability business case.
 
+Key data quality checks included:
+- Identifying missing values in critical fields
+- Checking for duplicate records using primary keys
+- Validating data types and logical values (e.g., non-negative cost and distance values)
+- During this process, missing values were identified in the Trips and Fuel_Purchases tables. Since these fields are essential for operational and cost analysis, records containing null values were removed to maintain data integrity and ensure accurate profitability calculations.
