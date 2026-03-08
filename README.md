@@ -21,6 +21,13 @@ Key characteristics of the dataset:
 ## 3. Data Quality Checks
 Before conducting the analysis, several data quality checks were performed to ensure the reliability and accuracy of the dataset. The validation focused on the tables that are directly relevant to the route profitability business case.
 
+The following tables were reviewed:
+- Trips
+- Loads
+- Routes
+- Fuel_Purchases
+- Maintenance_Records
+
 Key data quality checks included:
 - Identifying missing values in critical fields
 - Checking for duplicate records using primary keys
