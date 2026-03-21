@@ -33,3 +33,21 @@ Key data quality checks included:
 - Checking for duplicate records using primary keys
 - Validating data types and logical values (e.g., non-negative cost and distance values)
 - During this process, missing values were identified in the Trips and Fuel_Purchases tables. Since these fields are essential for operational and cost analysis, records containing null values were removed to maintain data integrity and ensure accurate profitability calculations.
+
+
+## 4. SQL Analysis
+- profit = revenue - costs(fuel and maintenance)
+- Data existed at different levels (truck vs trip vs route). Direct joins caused row duplication and inflated maintenance costs.
+Used CTEs to structure the analysis step-by-step
+Aggregated data before joining
+Applied cost allocation:
+maintenance_per_mile × route_miles
+Ensured accurate and consistent totals
+
+
+
+## 5. Dashboard
+
+## 6. Insights
+
+## 7. Recommendation
