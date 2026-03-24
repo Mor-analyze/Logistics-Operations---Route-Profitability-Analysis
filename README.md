@@ -36,15 +36,19 @@ Key data quality checks included:
 
 
 ## 4. SQL Analysis
-- profit = revenue - costs(fuel and maintenance)
-- Data existed at different levels (truck vs trip vs route). Direct joins caused row duplication and inflated maintenance costs.
-Used CTEs to structure the analysis step-by-step
-Aggregated data before joining
-Applied cost allocation:
-maintenance_per_mile × route_miles
-Ensured accurate and consistent totals
+The goal of this step was to identify the most and least profitable routes.
+By ranking routes based on total profit, we can:
+- Detect underperforming lanes
+- Prioritize high-margin routes
+- Support pricing and operational decisions
 
+### Methodology
 
+Profit was calculated using the following formula:
+Profit = Revenue − Fuel Cost − Maintenance Cost
+Then, routes were ranked using a window function based on total profit.
+
+SQL code:
 
 ## 5. Dashboard
 
