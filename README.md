@@ -47,6 +47,7 @@ By ranking routes based on total profit, we can:
 Profit was calculated using the following formula:
 Profit = Revenue − Fuel Cost − Maintenance Cost
 Then, routes were ranked using a window function based on total profit.
+Maintenance costs were allocated proportionally based on miles driven by each truck per route, which provides a more realistic cost distribution compared to flat allocation.
 
 SQL code:
 ```sql
@@ -64,11 +65,16 @@ join total_maintenance_per_rout tmp on fc.route_id = tmp.route_id
 order by Profit desc
 ```
 #### Full SQL logic is available in the /sql folder.
+https://github.com/Mor-analyze/Logistics-Operations---Route-Profitability-Analysis/blob/main/route_profitability.sql
 
 ### Output
 <img width="695" height="172" alt="top 10" src="https://github.com/user-attachments/assets/3e8f7c24-5f8d-449a-8786-323eabe3eb41" />
 
+### Challenges
 
+- Allocating maintenance cost to routes required multi-step transformation
+- Ensuring no duplication during joins (especially fuel transactions)
+- Handling trucks with no associated trips
 
 ## 5. Dashboard
 
