@@ -49,6 +49,26 @@ Profit = Revenue − Fuel Cost − Maintenance Cost
 Then, routes were ranked using a window function based on total profit.
 
 SQL code:
+```sql
+-- Final Profit Calculation
+select 
+    trp.route_id,
+    trp.Total_revenue,
+    fc.Total_Feul_Cost,
+    tmp.Total_Maintenance_Cost,
+    fc.total_feul_cost + tmp.total_maintenance_cost as Total_Cost,
+    trp.Total_revenue - (fc.total_feul_cost + tmp.total_maintenance_cost) as Profit
+from fuel_cost as fc 
+join Total_revenue_per_route trp on trp.route_id=fc.route_id 
+join total_maintenance_per_rout tmp on fc.route_id = tmp.route_id
+order by Profit desc
+```
+#### Full SQL logic is available in the /sql folder.
+
+### Output
+<img width="695" height="172" alt="top 10" src="https://github.com/user-attachments/assets/3e8f7c24-5f8d-449a-8786-323eabe3eb41" />
+
+
 
 ## 5. Dashboard
 
