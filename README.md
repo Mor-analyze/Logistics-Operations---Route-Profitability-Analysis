@@ -78,6 +78,17 @@ https://github.com/Mor-analyze/Logistics-Operations---Route-Profitability-Analys
 
 ## 5. Dashboard
 
+
+
 ## 6. Insights
+- Base rates are inconsistent between the same routes in opposite directions (e.g., New York → Philadelphia vs Philadelphia → New York), indicating a lack of standardized pricing strategy.
+- There is a strong positive correlation between route distance and profit margin, suggesting that longer routes are more cost-efficient.
+- Routes under 557 miles consistently show lower or negative profit margins, indicating that current base rates are insufficient to cover operational costs.
+- The New York → Philadelphia route is consistently unprofitable, with significantly negative margins compared to other routes.
 
 ## 7. Recommendation
+- Implement a pricing model that accounts for directional demand while minimizing unjustified rate discrepancies.
+- Prioritize long-distance routes and optimize network planning to increase the share of high-mileage trips.
+- Introduce a minimum charge or dynamic pricing model for short-haul routes to prevent systematic losses.
+- Re-evaluate the New York → Philadelphia route by adjusting pricing, reducing costs, or improving load efficiency before considering termination.
+
