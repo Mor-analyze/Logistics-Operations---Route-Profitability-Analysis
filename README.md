@@ -78,6 +78,7 @@ https://github.com/Mor-analyze/Logistics-Operations---Route-Profitability-Analys
 
 ## 5. Dashboard
 
+<img width="656" height="363" alt="Project dashboard" src="https://github.com/user-attachments/assets/4c1d8c96-3a5f-4064-bceb-f7aa504b2dcf" />
 
 
 ## 6. Insights
