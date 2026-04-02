@@ -77,6 +77,9 @@ https://github.com/Mor-analyze/Logistics-Operations---Route-Profitability-Analys
 - Handling trucks with no associated trips
 
 ## 5. Dashboard
+- This dashboard provides a high-level view of route profitability, allowing stakeholders to quickly identify underperforming routes and evaluate cost efficiency.
+- It enables comparison across routes, highlights the relationship between distance and profit margin, and surfaces loss-making routes for further investigation.
+- By combining financial metrics with visual insights, the dashboard supports data-driven decisions around pricing, route optimization, and cost control.
 
 <img width="656" height="363" alt="Project dashboard" src="https://github.com/user-attachments/assets/4c1d8c96-3a5f-4064-bceb-f7aa504b2dcf" />
 
