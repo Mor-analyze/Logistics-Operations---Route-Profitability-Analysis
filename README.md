@@ -17,7 +17,6 @@ Key characteristics of the dataset:
 - Tables are linked using primary and foreign keys such as route_id, driver_id and Load_id
 
 
-
 ## 3. Data Quality Checks
 Before conducting the analysis, several data quality checks were performed to ensure the reliability and accuracy of the dataset. The validation focused on the tables that are directly relevant to the route profitability business case.
 
@@ -34,6 +33,7 @@ Key data quality checks included:
 - Validating data types and logical values (e.g., non-negative cost and distance values)
 - During this process, missing values were identified in the Trips and Fuel_Purchases tables. Since these fields are essential for operational and cost analysis, records containing null values were removed to maintain data integrity and ensure accurate profitability calculations.
 
+The full analysis, including data preparation and exploration, is available in the Jupyter Notebook within this repository.
 
 ## 4. SQL Analysis
 The goal of this step was to identify the most and least profitable routes.
